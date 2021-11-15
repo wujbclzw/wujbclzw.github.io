@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wujbclzw.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="MDK安装破解在微信里搜索破解工具，常用的搜索方式已经找不到了右键启动图标，以管理员方式启动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MDK安装">
+<meta property="og:url" content="https://wujbclzw.github.io/2021/09/15/mdk5_install/index.html">
+<meta property="og:site_name" content="clzw78">
+<meta property="og:description" content="MDK安装破解在微信里搜索破解工具，常用的搜索方式已经找不到了右键启动图标，以管理员方式启动">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902162423-2021-09-02.png">
+<meta property="og:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902163044-2021-09-02.png">
+<meta property="og:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902175120-2021-09-02.png">
+<meta property="og:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902175256-2021-09-02.png">
+<meta property="og:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902175307-2021-09-02.png">
+<meta property="og:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210903171855-2021-09-03.png">
+<meta property="og:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210903171937-2021-09-03.png">
+<meta property="article:published_time" content="2021-09-15T03:02:01.000Z">
+<meta property="article:modified_time" content="2021-11-12T09:40:01.706Z">
+<meta property="article:author" content="clzw78">
+<meta property="article:tag" content="ARM">
+<meta property="article:tag" content="MDK">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902162423-2021-09-02.png">
+
+
+<link rel="canonical" href="https://wujbclzw.github.io/2021/09/15/mdk5_install/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wujbclzw.github.io/2021/09/15/mdk5_install/","path":"2021/09/15/mdk5_install/","title":"MDK安装"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>MDK安装 | clzw78</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">clzw78</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">行之苟有恒，久久自芬芳</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MDK%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">MDK安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A0%B4%E8%A7%A3"><span class="nav-number">1.1.</span> <span class="nav-text">破解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MDK-ARM%E6%94%AF%E6%8C%81%E5%8C%85%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.2.</span> <span class="nav-text">MDK-ARM支持包下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">自动格式化代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81"><span class="nav-number">1.4.</span> <span class="nav-text">中文乱码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ST-link-%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.5.</span> <span class="nav-text">ST-link 设置</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="clzw78"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">clzw78</p>
+  <div class="site-description" itemprop="description">昨夜西风凋碧树，独上高楼，望尽天涯路</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wujbclzw.github.io/2021/09/15/mdk5_install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="clzw78">
+      <meta itemprop="description" content="昨夜西风凋碧树，独上高楼，望尽天涯路">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="clzw78">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          MDK安装
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-09-15 11:02:01" itemprop="dateCreated datePublished" datetime="2021-09-15T11:02:01+08:00">2021-09-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-11-12 17:40:01" itemprop="dateModified" datetime="2021-11-12T17:40:01+08:00">2021-11-12</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="MDK安装"><a href="#MDK安装" class="headerlink" title="MDK安装"></a>MDK安装</h1><h2 id="破解"><a href="#破解" class="headerlink" title="破解"></a>破解</h2><p>在微信里搜索破解工具，常用的搜索方式已经找不到了<br>右键启动图标，以管理员方式启动<br><img src="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902162423-2021-09-02.png" alt="20210902162423-2021-09-02"></p>
+<span id="more"></span>
+
+<h2 id="MDK-ARM支持包下载"><a href="#MDK-ARM支持包下载" class="headerlink" title="MDK-ARM支持包下载"></a>MDK-ARM支持包下载</h2><p>MDK-ARM V4 和 V5版本在安装的时候最大的区别在于：V4版本安装包里面集成器件的支持包，而V5版本是独立出来，自己下载安装的，因此需要对应自己芯片型号，下载相应的器件支持包（我百度网盘提供ST公司的器件支持包供大家下载）。</p>
+<p>MDK-ARM器件支持包下载地址:</p>
+<p>官方网站：<a target="_blank" rel="noopener" href="http://www.keil.com/dd2/Pack">http://www.keil.com/dd2/Pack</a><br>下载的文件为.pack格式，双击安装。</p>
+<p><img src="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902163044-2021-09-02.png" alt="20210902163044-2021-09-02"></p>
+<p>这里打开支持包安装界面，有很多支撑包可以选择。还可以找到RT-thread。</p>
+<h2 id="自动格式化代码"><a href="#自动格式化代码" class="headerlink" title="自动格式化代码"></a>自动格式化代码</h2><p><a target="_blank" rel="noopener" href="https://blogs.oopswow.com/2020/03/23/Use-ASytle-format-your-code-with-Keil-MDK/">链接</a></p>
+<p>链接：<a target="_blank" rel="noopener" href="http://sourceforge.net/projects/astyle/files/">下载AStyle</a><br>安装比较简单，直接解压就可以了。</p>
+<p>Keil-MDK 配置<br>依次打开 Tools -&gt; Customize Tools Menu,然后点击新增按钮增加一个用户自定义菜单，如下图：</p>
+<p><img src="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902175120-2021-09-02.png" alt="20210902175120-2021-09-02"></p>
+<p>参数配置<br>我们还需要配置一下参数，主要是为了格式化的代码符合我们的要求，下面先给大家看一下完整参数，然后再给大家简单分析一下，方便你修改成你的风格：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-n !E --style=google --indent=spaces=4 --align-pointer=name --pad-oper --pad-comma --unpad-paren --attach-return-type-decl --convert-tabs --attach-closing-while --indent-switches --max-instatement-indent=60</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>-n：不生成备份文件</li>
+<li>!E：格式化当前文件</li>
+<li>–indent=spaces=2 ：缩进使用空格，空格个数为2(你可以修改数字为其他的）</li>
+<li>–align-pointer=name ：*，&amp;，^靠近变量名称</li>
+<li>–pad-oper：运算符两端插入空格</li>
+<li>–pad-comma ：逗号后插入空格，如果启用了上面的选项，此参数也可以省略</li>
+<li>–unpad-paren ：取消括号内部或者外部的空格(比如函数名靠近括号)</li>
+<li>–attach-return-type-decl ：返回值类型与函数名称保持在同一行</li>
+<li>–convert-tabs ：将TAB转换为空格</li>
+<li>–attach-closing-while ：do while循环的while语句跟第二个大括号保持在同一行</li>
+<li>–indent-switches ：switch语句中的case选项，要保持缩进格式</li>
+<li>–max-instatement-indent=60 ：一行代码的字符长度，如果超过这个长度会断开并换行</li>
+</ul>
+<p>配置好后我们就可以直接使用了，当你看到某些代码不舒服时，别问别想，直接先格式化下就可以！</p>
+<h2 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h2><p><a target="_blank" rel="noopener" href="https://blog.51cto.com/u_12956289/2917344">参考链接</a></p>
+<p>之前使用MDK的时候一直出现中文乱码的问题，其实不是乱码，只是编辑器是以ANSI编码方式来识别字符的，所需要修改编辑器的编码方式，注意最好是修改成GB2312编码方式，因为有时候程序使用了中文字库需要在程序中输入中文字符串，而程序只能解码GB2312格式的中文字符串，所以以其他形式编码的中文是不能被程序正确解码的，需要使用GB2312编码。修改编辑器的编码方式如下：</p>
+<p><img src="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902175256-2021-09-02.png" alt="20210902175256-2021-09-02"></p>
+<p><img src="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210902175307-2021-09-02.png" alt="20210902175307-2021-09-02"></p>
+<h2 id="ST-link-设置"><a href="#ST-link-设置" class="headerlink" title="ST-link 设置"></a>ST-link 设置</h2><p>安装驱动程序:<br><a target="_blank" rel="noopener" href="https://www.st.com/content/my_st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.license=1629359493809.product=STSW-LINK009.version=2.0.2.html#get-software">官网下载地址</a></p>
+<p>工程设置界面：</p>
+<p>这里要选择st-link<br><img src="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210903171855-2021-09-03.png" alt="20210903171855-2021-09-03"></p>
+<p>进入st-link的设置界面，一定要把 reset and run 选上，否则下载程序后不自动运行<br><img src="https://clzw78-1255335509.cos.ap-guangzhou.myqcloud.com/images/vscode/20210903171937-2021-09-03.png" alt="20210903171937-2021-09-03"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ARM/" rel="tag"># ARM</a>
+              <a href="/tags/MDK/" rel="tag"># MDK</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/09/15/test-blog/" rel="next" title="test_blog">
+                  test_blog <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">clzw78</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
