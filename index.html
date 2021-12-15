@@ -214,7 +214,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-12-15 11:02:01 / 修改时间：15:43:32" itemprop="dateCreated datePublished" datetime="2021-12-15T11:02:01+08:00">2021-12-15</time>
+      <time title="创建时间：2021-12-15 11:02:01 / 修改时间：15:50:02" itemprop="dateCreated datePublished" datetime="2021-12-15T11:02:01+08:00">2021-12-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -238,9 +238,8 @@
     <div class="post-body" itemprop="articleBody">
           <h1 id="样条插值计算方法"><a href="#样条插值计算方法" class="headerlink" title="样条插值计算方法"></a>样条插值计算方法</h1><h2 id="计算要求："><a href="#计算要求：" class="headerlink" title="计算要求："></a>计算要求：</h2><p>假设有$n+1$个有序点$P_k,k \in[0,n]$  , 样条曲线是构造$n$个多项式分段定义，分别以$P_i,P_{i+1}，i \in [0,n-1]$为起止点。相邻的多项式交界点$P_i$处应连续，且多阶可导。</p>
 <p>以3次样条插值为例，说明其计算方法如下：</p>
-<p>设每段多项式的方程为:</p>
-<script type="math/tex; mode=display">
-a_i*x^3 + b_i*x^2 + c_i*x + d_i = p_i</script><p>这样的多项式共有$n$个，需要求解$4n$个多项式系数。由每个多项式两端的坐标值可得到$2n$方程，再由相邻点处一阶，二阶导数相等可得$2(n-1)$个方程。另外增加两个初始条件，比如起点和终点处的速度为值或加速度值，可得$4n$个方程，可求解所有的系数并计算每段曲线的方程式。</p>
+<p>设每段多项式的方程为:   $a_i<em>x^3 + b_i</em>x^2 + c_i*x + d_i = p_i$  </p>
+<p>这样的多项式共有$n$个，需要求解$4n$个多项式系数。由每个多项式两端的坐标值可得到$2n$方程，再由相邻点处一阶，二阶导数相等可得$2(n-1)$个方程。另外增加两个初始条件，比如起点和终点处的速度为值或加速度值，可得$4n$个方程，可求解所有的系数并计算每段曲线的方程式。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/12/15/spline_curve/#more" rel="contents">
