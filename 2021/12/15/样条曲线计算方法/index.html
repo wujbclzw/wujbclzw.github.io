@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"wujbclzw.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="样条插值计算方法计算要求：假设有$n+1$个有序点$Pk,k \in[0,n]$  , 样条曲线是构造$n$个多项式分段定义，分别以$P_i,P{i+1}，i \in [0,n-1]$为起止点。相邻的多项式交界点$P_i$处应连续，且多阶可导。 以3次样条插值为例，说明其计算方法如下： 设每段多项式的方程为:  a_i*x^3 + b_i*x^2 + c_i*x + d_i &#x3D; p_i这样的多项式">
+<meta name="description" content="样条插值计算方法计算要求：假设有$n+1$个有序点$P_k,k \in[0,n]$  , 样条曲线是构造$n$个多项式分段定义，分别以$P_i,P_{i+1}，i \in [0,n-1]$为起止点。相邻的多项式交界点$P_i$处应连续，且多阶可导。 以3次样条插值为例，说明其计算方法如下： 设每段多项式的方程为:  a_i*x^3 + b_i*x^2 + c_i*x + d_i &#x3D; p_i这样的多">
 <meta property="og:type" content="article">
 <meta property="og:title" content="样条插值计算方法">
 <meta property="og:url" content="https://wujbclzw.github.io/2021/12/15/%E6%A0%B7%E6%9D%A1%E6%9B%B2%E7%BA%BF%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="clzw78">
-<meta property="og:description" content="样条插值计算方法计算要求：假设有$n+1$个有序点$Pk,k \in[0,n]$  , 样条曲线是构造$n$个多项式分段定义，分别以$P_i,P{i+1}，i \in [0,n-1]$为起止点。相邻的多项式交界点$P_i$处应连续，且多阶可导。 以3次样条插值为例，说明其计算方法如下： 设每段多项式的方程为:  a_i*x^3 + b_i*x^2 + c_i*x + d_i &#x3D; p_i这样的多项式">
+<meta property="og:description" content="样条插值计算方法计算要求：假设有$n+1$个有序点$P_k,k \in[0,n]$  , 样条曲线是构造$n$个多项式分段定义，分别以$P_i,P_{i+1}，i \in [0,n-1]$为起止点。相邻的多项式交界点$P_i$处应连续，且多阶可导。 以3次样条插值为例，说明其计算方法如下： 设每段多项式的方程为:  a_i*x^3 + b_i*x^2 + c_i*x + d_i &#x3D; p_i这样的多">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://wujbclzw.github.io/2021/12/15/%E6%A0%B7%E6%9D%A1%E6%9B%B2%E7%BA%BF%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/样条曲线计算方法.assets/fig-9-a.png">
 <meta property="og:image" content="https://wujbclzw.github.io/2021/12/15/%E6%A0%B7%E6%9D%A1%E6%9B%B2%E7%BA%BF%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/样条曲线计算方法.assets/fig-9-b.png">
@@ -247,7 +247,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="样条插值计算方法"><a href="#样条插值计算方法" class="headerlink" title="样条插值计算方法"></a>样条插值计算方法</h1><h2 id="计算要求："><a href="#计算要求：" class="headerlink" title="计算要求："></a>计算要求：</h2><p>假设有$n+1$个有序点$P<em>k,k \in[0,n]$  , 样条曲线是构造$n$个多项式分段定义，分别以$P_i,P</em>{i+1}，i \in [0,n-1]$为起止点。相邻的多项式交界点$P_i$处应连续，且多阶可导。</p>
+        <h1 id="样条插值计算方法"><a href="#样条插值计算方法" class="headerlink" title="样条插值计算方法"></a>样条插值计算方法</h1><h2 id="计算要求："><a href="#计算要求：" class="headerlink" title="计算要求："></a>计算要求：</h2><p>假设有$n+1$个有序点$P_k,k \in[0,n]$  , 样条曲线是构造$n$个多项式分段定义，分别以$P_i,P_{i+1}，i \in [0,n-1]$为起止点。相邻的多项式交界点$P_i$处应连续，且多阶可导。</p>
 <p>以3次样条插值为例，说明其计算方法如下：</p>
 <p>设每段多项式的方程为:</p>
 <script type="math/tex; mode=display">
